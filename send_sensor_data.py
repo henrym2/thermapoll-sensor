@@ -17,7 +17,7 @@ sensorConfig = {
     "temperature": temperature_c
 }
 
-while true:
+while True:
     sensorConfig["temperature"] = dht_sensor.temperature
     sensorConfig["time"] = datetime.datetime.now().isoformat()
     print(sensorConfig)
